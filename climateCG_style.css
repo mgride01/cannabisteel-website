@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(214, 216, 218, 0.80);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 20px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-family: museo-sans, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #333F48;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #285E48;
+    background-color: rgba(214, 216, 218);
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+html {
+    background: url("heavy_stuff.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+}

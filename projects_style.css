@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+em {
+    text-align: center;
+    color: black;
+    font-family: museo-sans, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+}
+
+.service-statement {
+    text-align: center;
+    font-family: museo-sans, sans-serif;
+    font-weight: 520;
+    color: black;
+    /*color: white;*/
+    /*border-radius: 10px;*/
+    /*border: 2px solid DarkSlateGrey;*/
+    /*background-color: rgba(51, 63, 72, .60);*/
+    width: 700px;
+    height: 275px;
+    margin: auto;
+    margin-left: 29%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 30px 30px 25px 30px;
+}
+
+@media screen and (min-width: 1001px) {
+  div.service-statement {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div.service-statement {
+    font-size: 15px;
+  }
+}
+
+/*
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: right;
+    width: 42%;
+    padding: 40px;
+    left-padding: 70px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.container {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: fixed;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.links a {
+    color: black;
+    font-size: 30px;
+    font-family: museo-sans, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px 32px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}*/
+
+
+/* SIDE NAVIGATION BAR */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(214, 216, 218, 0.80);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .dropbtn{
+    padding: 20px 0px;
+    text-decoration: none;
+    width: 100%;
+    font-family: museo-sans, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333F48;
+    display: block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-align: center;
+}
+
+
+
+.sidenav a:hover, .dropbtn:hover {
+    color: #285E48;
+    background-color: rgba(214, 216, 218);
+}
+
+.drop-container {
+    display: none;
+    background-color: rgba(214, 216, 218);
+    padding-left: 8px;
+}
+
+.active {
+    background-color: white;
+    color: #333F48;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+html {
+    background: url("projects_background.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
