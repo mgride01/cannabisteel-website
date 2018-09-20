@@ -11,14 +11,156 @@
 </head>
 
 <body> 
-<div class = "sidenav">
+   <div class = "sidenav">
         <img class="logo" src="mainGlyph.png">
-        <a href ="resources.html">WHAT WE DO</a>
-        <a href ="projects.html">OUR PROJECTS</a>
-        <a href ="#credo">OUR CREDO</a>
-        <a href ="#contact">CONTACT US</a>
-        <a href="#blog">BLOG</a>
-        <a href="#links">LINKS</a> </div>
+        <a href ="index.html">HOME</a>
+        <a href="what.html">WHAT WE DO</a>
+        <button class = "dropbtn"> OUR PROJECTS </button> 
+        <div class="drop-container">
+                <a href="climateCG.html">Climate Controlled Grows</a>
+                <a href="extraction.html">Extraction Faciltiies</a>
+                <a href="dispensaries.html">Dispensaries</a>
+                <a href="distribution.html">Distribution Centers</a>
+                <a href="hive.html">Hive Warehouses</a>
+        </div>
+        <a href ="credo.html">OUR CREDO</a>
+        <a href ="contact.html">CONTACT US</a>
+        <a href="blog.html">BLOG</a>
+        <a href="links.html">LINKS</a></div>
+
+        <!-- WHAT WE DO SUMMARY GOES BEFORE THE PHOTOS -->
+
+        <div class = "form">
+        <div class = "service-statement">
+                <em> INDUSTRY-SPECIFIC STEEL BUILDING DESIGN AND PROJECT DEVELOPMENT </em>
+
+                <p></p>
+
+
+                <div class = "inner-statement">
+
+                THE EFFICIENCY OF ALL INDOOR COMMERCIAL ACTIVITY IS A DIRECT FUNCTION OF BUILDING DESIGN
+
+                <p></p>
+
+                MOST COMMERCIAL PRODUCTION FACILITIES CHOSE CLIMATE CONTROLLED BUILDINGS TO MAXIMIZE PRODUCTION
+
+                <p></p>
+
+                STEEL BUILDINGS ARE THE PREFERRED SOLUTION
+
+
+                </div>
+
+
+                <p></p>
+
+                <p> Over the past 22 years, we have designed, supplied, and built over 250 steel buildings for commercial, industrial, retail, specialty, agricultural and public projects. </p>
+
+                <p></p>
+
+                <p> With the advent of the burgeoning Cannabis Industry, we have limited our work to industry-specific design and supply of pre-engineered steel buildings to any location in the U.S., and Canada, and to owner-representation in the construction process for Cannabis projects. </p>
+
+                <p></p>
+
+                <p> Our team offers the following scopes of work: </p>
+
+                <p>
+                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
+        </div>
+        </div>
+
+
+        <!--
+        <div class="row">
+          <div class="column">
+            <div class="container">
+                    <img src="heavy_stuff.jpg" alt="Extraction Faciltiies" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href ="extraction.html">EXTRACTION FACILITIES</a>
+                        </div>
+                    </div>
+            </div>            
+          </div>
+          <div class="column">
+            <div class="container">
+                    <img src="steel_building1.png" alt="Climate Controlled Grows" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href="climateCG.html">CLIMATE CONTROLLED GROWS</a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="container">
+                    <img src="heavy_stuff.jpg" alt="Secure Space Design" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href = "secure-space.html">SECURE SPACE DESIGN</a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="container">
+                    <img src="steel_building1.png" alt="Dispensaries" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href = "dispensaries.html">DISPENSARIES</a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="column">
+            <div class="container">
+                    <img src="heavy_stuff.jpg" alt="Hive Warehouses" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href = "hive.html">HIVE WAREHOUSES</a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="container">
+                    <img src="heavy_stuff.jpg" alt="Distribution Centers" style="width:100%" class="image">
+                    <div class = "middle">
+                        <div class = "links">
+                                <a href = "distribution.html">DISTRIBUTION CENTERS</a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+        -->
+   
+        <!-- Javascript for dropdown sidenav menu -->
+        <script>
+        /*Loop through all dropdown buttons */
+        var dropdown = document.getElementsByClassName("dropbtn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {   
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+
 </body>
 
 </html>

@@ -6,7 +6,7 @@ body, html {
 
 em {
     text-align: center;
-    color: black;
+    color: white;
     font-family: museo-sans, sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -16,15 +16,19 @@ p {
     font-size: 20px;
 }
 
+
+.statement {
+
+}
+
 .service-statement {
     text-align: center;
     font-family: museo-sans, sans-serif;
     font-weight: 520;
-    color: black;
-    /*color: white;*/
-    /*border-radius: 10px;*/
-    /*border: 2px solid DarkSlateGrey;*/
-    /*background-color: rgba(51, 63, 72, .60);*/
+    color: white;
+    border-radius: 10px;
+    border: 2px solid DarkSlateGrey;
+    background-color: rgba(51, 63, 72, .60);
     width: 700px;
     height: 275px;
     margin: auto;
