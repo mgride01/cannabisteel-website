@@ -3,6 +3,8 @@ body, html {
     margin: 0;
 }
 
+/* SIDE NAVIGATION BAR */
+
 .sidenav {
     height: 100%;
     width: 200px;
@@ -15,20 +17,36 @@ body, html {
     padding-top: 20px;
 }
 
-.sidenav a {
+.sidenav a, .dropbtn{
     padding: 20px 0px;
     text-decoration: none;
-    text-align: center;
+    width: 100%;
     font-family: museo-sans, sans-serif;
-    font-weight: 500;
     font-size: 15px;
+    font-weight: 500;
     color: #333F48;
     display: block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-align: center;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropbtn:hover {
     color: #285E48;
     background-color: rgba(214, 216, 218);
+}
+
+.drop-container {
+    display: none;
+    background-color: rgba(214, 216, 218);
+    padding-left: 8px;
+}
+
+.active {
+    background-color: white;
+    color: #333F48;
 }
 
 .logo {
@@ -40,6 +58,7 @@ body, html {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 
 
 html {
