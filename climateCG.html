@@ -30,15 +30,18 @@
         <a href="links.html">LINKS</a></div>
 
 
-   <div class="row">
+        <div class="row">
           <div class="column">
             <div class="container">
-                    <img src="indoor_grow_pics/1A.jpg" alt="Extraction Faciltiies" style="width:100%" class="image">
+                    <img src="indoor_grow_pics/1A.jpg" onclick= "openModal();currentSlide(1)" alt="Indoor_Grow_1" style="width:100%" class="hover-shadow cursor">
+                    
+                    <!--
                     <div class = "middle">
                         <div class = "links">
                                 <a href ="extraction.html">EXTRACTION FACILITIES</a>
                         </div>
                     </div>
+                    -->
             </div>            
           </div>
           <div class="column">
@@ -100,12 +103,29 @@
         </div>
 
 
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="indoor_grow_pics/1A.jpg" style="width:100%">
+            </div>
+
+
+            <div class="column">
+            <img class="demo cursor" src="indoor_grow_pics/1A.jpg" style="width:100%" onclick="currentSlide(1)" alt="Indoor_Grow_1">
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 </body>
 
  <!-- Javascript for dropdown sidenav menu -->
-        <script>
+<script>
         /* Sidenav - Loop through all dropdown buttons */
         var dropdown = document.getElementsByClassName("dropbtn");
         var i;
@@ -120,7 +140,46 @@
             }
           });
         }
-        </script>
+</script>
+ 
+<!-- Javascript for Modal Lightbox -->
+ <script>
+    /* Modal Lightbox Effect */
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+  }
+
+</script>
 
 
 </html>
