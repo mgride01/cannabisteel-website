@@ -61,6 +61,75 @@ body, html {
 
 
 
+
+{
+    box-sizing: border-box;
+}
+
+.column {
+    float: right;
+    width: 40%;
+    padding: 40px;
+    left-padding: 150px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.container {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: fixed;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.links a {
+    color: black;
+    font-size: 30px;
+    font-family: museo-sans, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px 32px;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+/* BACKGROUND PHOTO */
+
 html {
     background: url("climateCG_background.jpg");
     -webkit-background-size: cover;
