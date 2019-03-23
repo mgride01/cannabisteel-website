@@ -13,3 +13,8 @@
     min-height: 100%;
     z-index: -1;
 }
+
+header {
+    opacity: 0.75;
+}
+
