@@ -1,58 +1,82 @@
 <!doctype html>
 
 <html>
+  <head>
+    <title>Cannabisteel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/mini-nord.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+  </head>
+  
+  <body>
+    <header>
+      <label for="drawer-checkbox" class="drawer-toggle"></label>
+      <a href="index.html" class="logo">Cannabisteel</a>
+      <a href="index.html" class="button hidden-sm">Home</a>
+      <a href="what.html" class="button hidden-sm">What We Do</a>
+      <a href="projects.html" class="button hidden-sm">Our Projects</a>
+      <a href="credo.html" class="button hidden-sm">Our Credo</a>
+      <a href="contact.html" class="button hidden-sm">Contact Us</a>
+      <a href="blog.html" class="button hidden-sm">Blog</a>
+      <a href="links.html" class="button hidden-sm">Links</a>
+    </header>
 
-<head>
-<title>Cannabisteel</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="static/css/contact_style.css">
-</head>
+    <div class="row">
+      <input type="checkbox" id="drawer-checkbox" class="drawer">
+      <div class="col-sm-12 col-md-3 drawer">
+	<label for="drawer-checkbox" class="drawer-close"></label>
+	<nav class="hidden-md hidden-lg">
+	  <a href="index.html">Home</a>
+	  <a href="what.html">What We Do</a>
+	  <span>Our Projects</span>
+	  <a href="climate.html" class="sublink-1">Indoor Grows</a>
+	  <a href="extraction.html" class="sublink-1">Extraction Facilities</a>
+	  <a href="dispensaries.html" class="sublink-1">Dispensaries</a>
+	  <a href="distribution.html" class="sublink-1">Distribution Centers</a>
+	  <a href="hive.html" class="sublink-1">Hive Warehouses</a>
+	  <a href="credo.html">Our Credo</a>
+	  <a href="contact.html">Contact Us</a>
+	  <a href="blog.html">Blog</a>
+	</nav>
+      </div>
+    </div>
 
-<body> 
+    <div class="row">
+      <div class="col-sm-12">
+	<div class="card fluid">
+	  <h1 class="section dark double-padded">Contact Us:</h1>
+	</div>
+      </div>
+    </div>
 
-   <div class = "video-container">
-        <video autoplay muted loop>
-          <source src="static/videos/contact_background.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-   </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+	<div class="card fluid">
+	  <h2 class="section dark double-padded">Mark Grider, Design</h2>
+	  <div class="section double-padded">
+	    <p>Mobile: +1 (503) 936-3636</p>
+	    <p>Email: <a href="mailto:mark@cannabisteel.com">mark@cannabisteel.com</a></p>
+	  </div>
+	</div>
+      </div>
 
-  <div class = "sidenav">
-        <img class="logo" src="static/images/mainGlyph.png">
-        <a href="index.html">HOME</a>
-        <a href="what.html">WHAT WE DO</a>
-        <button class = "dropbtn"> OUR PROJECTS </button> 
-        <div class="drop-container">
-                <a href="climateCG.html">Indoor Grows</a>
-                <a href="extraction.html">Extraction Faciltiies</a>
-                <a href="dispensaries.html">Dispensaries</a>
-                <a href="distribution.html">Distribution Centers</a>
-                <a href="hive.html">Hive Warehouses</a>
-        </div>
-        <a href ="credo.html">OUR CREDO</a>
-        <a href ="contact.html">CONTACT US</a>
-        <a href="blog.html">BLOG</a>
-        <a href="links.html">LINKS</a></div>
-</body>
+      <div class="col-sm-12 col-md-6">
+	<div class="card fluid">
+	  <h2 class="section dark double-padded">Taryn Grider, Admin</h2>
+	  <div class="section double-padded">
+	    <p>Mobile: +1 (503) 936-4300</p>
+	    <p>Email: <a href="mailto:taryn@cannabisteel.com">taryn@cannabisteel.com</a></p>
+	  </div>
+	</div>
+      </div>
+    </div>
 
- <!-- Javascript for dropdown sidenav menu -->
-        <script>
-        /*Loop through all dropdown buttons */
-        var dropdown = document.getElementsByClassName("dropbtn");
-        var i;
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {   
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "none";
-            } else {
-              dropdownContent.style.display = "block";
-            }
-          });
-        }
-        </script>
-
+    <div class="row">
+      <video autoplay muted loop class="background-video">
+	<source src="static/videos/contact.mp4" type="video/mp4"/>
+	This browser does not support HTML5 video.
+      </video>
+    </div>
+  </body>
 </html>
